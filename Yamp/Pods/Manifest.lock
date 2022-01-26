@@ -1,0 +1,20 @@
+PODS:
+  - SnapKit (4.0.1)
+  - Yarp (1.0.0)
+
+DEPENDENCIES:
+  - SnapKit (~> 4.0.0)
+  - Yarp
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+    - Yarp
+
+SPEC CHECKSUMS:
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  Yarp: 6c1fd3f2696b942a8897b5543ee2c40ebbc7ae4b
+
+PODFILE CHECKSUM: 768d1d1c5fce89c5426f44644497460d36cf98d0
+
+COCOAPODS: 1.10.1
