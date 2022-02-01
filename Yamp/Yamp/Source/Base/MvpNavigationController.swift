@@ -12,17 +12,17 @@ import UIKit
  A subclass of UINavigationController that implements a ViewControllerFactory and Router protocol
  */
 
-public class BaseNavigationController: UINavigationController, IBaseNavigationController {
+open class MvpNavigationController: UINavigationController, IMvpNavigationController {
 
-    internal lazy var presenter: IBaseNavigationPresenter = {
-        BaseNavigationPresenter()
+    public lazy var presenter: IMvpNavigationPresenter = {
+        MvpNavigationPresenter()
     }()
 
-    required init() {
+    required public init() {
         super.init(nibName: nil, bundle: nil)
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 

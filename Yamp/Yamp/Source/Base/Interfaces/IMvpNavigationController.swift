@@ -9,6 +9,6 @@
 
 import UIKit
 
-protocol IBaseNavigationController {
-    var presenter: IBaseNavigationPresenter { get }
+public protocol IMvpNavigationController {
+    var presenter: IMvpNavigationPresenter { get }
 }

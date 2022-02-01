@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol IBaseNavigationPresenter: AnyObject {
+public protocol IMvpNavigationPresenter: AnyObject {
 
 }

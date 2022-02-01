@@ -14,7 +14,7 @@ import UIKit
  method for adding multiple subviews to a parent.
  */
 
-protocol IBaseViewController: AnyObject where Self: UIViewController {
+public protocol IMvpViewController where Self: UIViewController {
     /**
      In the implementation, this should add constriants to the main view's subviews. The base
      implementation should call this in viewDidLoad() or after the main view has been loaded.

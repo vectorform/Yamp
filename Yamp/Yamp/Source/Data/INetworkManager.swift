@@ -28,23 +28,10 @@ protocol INetworkManager {
      - parameter parameters: JSONDictionary? - an optional JSONDictionary to use as the query string
      - parameter completion: NetworkManagerGetObjectCompletion block
      */
-    func callToObject(path: String,
+    func callToPath(path: String,
                       verb: HTTPVerb,
                       parameters: JSONDictionary?,
                       completion: @escaping NetworkManagerCallCompletion )
-
-    /**
-     Creates and runs a general HTTP method that takes a path and a completion block for returning an Array of JSON objects
-
-     - parameter path: String - a complete or relative path for the GET request
-     - parameter verb: HTTPVerb - the http verb to be used to make the call.
-     - parameter parameters: JSONDictionary? - an optional JSONDictionary to use as the query string
-     - parameter completion: NetworkManagerGetArrayCompletion block
-     */
-    func callToArray(path: String,
-                     verb: HTTPVerb,
-                     parameters: JSONDictionary?,
-                     completion: @escaping NetworkManagerCallArrayCompletion )
 
     /**
      Creates and runs a general GET method that takes a path to a resource at a URL, a path to save the
@@ -65,15 +52,21 @@ protocol INetworkManager {
 
 public typealias JSONDictionary = [String: Any]
 public typealias JSONArray = [Any]
-public typealias NetworkManagerCallCompletion = (_: JSONDictionary?, _ : Error?) -> Void
-public typealias NetworkManagerCallArrayCompletion = (_: JSONArray?, _ : Error?) -> Void
-public typealias NetworkManagerLoginCompletion = (_: Bool, _ : Error?) -> Void
-public typealias NetworkManagerDownloadCompletion = (_: Bool, _ : Error?) -> Void
+public typealias NetworkManagerCallCompletion = (Data?, Error?) -> Void
+public typealias NetworkManagerCallCompletionParsed<T: Codable> = (T?, Data?, Error?) -> Void
+public typealias NetworkManagerLoginCompletion = (Bool, Error?) -> Void
+public typealias NetworkManagerDownloadCompletion = (Bool, Error?) -> Void
 
 enum NetworkManagerError: Int, CustomStringConvertible, CustomErrorConvertible {
-    case malformedURL = 1000, malformedJSON, tokenFailure, jsonParseError, badData,
+
+    case malformedURL = 1000, malformedJSON, tokenFailure, jsonParseError,
     missingArray, missingObject, downloadCouldNotBeSavedToDisk, fileCopyError, fileExistsError,
-    notAuthenticated, notAuthorized, serverError, resourceNotFound
+    serverError
+
+    case badData = 400
+    case notAuthenticated = 401
+    case notAuthorized = 403
+    case resourceNotFound = 404
 
     var domain: String {
         return "NetworkManagerError"

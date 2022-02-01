@@ -1,0 +1,937 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 53;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E1D117ECB906F3031A429B29AC5D865 /* IDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2161ED9D9C8CC0E6486A2F08EE58B8 /* IDataManager.swift */; };
+		12ECB577040AD0E4792AE2EA96B45719 /* Yarp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661C06DEE698B82AFB8346BE640C4D49 /* Yarp.swift */; };
+		14DC74C4A8EED5CA854A609AAF06B148 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E3C4C74FAD8521AC4855843BC0B551 /* DataManager.swift */; };
+		1535FB8767D666F626FA56119628F25E /* INetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64137834C424559171ED925F0CC5E59 /* INetworkManager.swift */; };
+		3397606527299C4D9840B3420D5204DE /* MvpNavigationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5DCC6CA9CE4FE309E3E7CDE9D97BD2 /* MvpNavigationPresenter.swift */; };
+		340A1F1BA7D9629BCB51DA17E90E7E03 /* Yarp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D18DD8E34DA922624CB1110E786A576B /* Yarp-dummy.m */; };
+		4400CBAAAC6230BC75E576D2D8B27DD6 /* IMvpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96BDC5E75D81E0316109F76CCD8A0F2 /* IMvpViewController.swift */; };
+		45B31045C04833D929515CBB4FBFBAAB /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C5A5BA61E8FA800994D1ADD424BEF8 /* String+Extensions.swift */; };
+		492054BFB2E1ABB07C02B933BC260EA6 /* NetworkManager+RequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188131BB4347927E604517BA3EABFE03 /* NetworkManager+RequestHelper.swift */; };
+		60CB167D830233AC4A88FE4851303C22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA392282659C45E8CA6BE6DAEEC2069B /* Foundation.framework */; };
+		6819886855A33B07A0978200D43398AD /* IAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97AEC9D812F7BD3C6C086F25CDCDCDB /* IAdapter.swift */; };
+		6C7CDB994A148E5DDFF5BB0FCB012666 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA392282659C45E8CA6BE6DAEEC2069B /* Foundation.framework */; };
+		6F33A19CCCFCA3C29F217E6E6FE1B4D4 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379DB549C4516A9B1CD72F282B53AE4A /* CustomError.swift */; };
+		7F44D7E4026E75ED3F62BAF5449C40F3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC980A75355A7A7A03CBEA0D2B4C1A6C /* NetworkManager.swift */; };
+		7F90FD5DC15C299F3674417EF17F20C8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4E928BE14C14900FD8127BF5717F7C1 /* SystemConfiguration.framework */; };
+		82C7F90A84E7FCFC7979E4EDA5E77E5B /* IMvpNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B856942A93585A05176019F91B0BAAD9 /* IMvpNavigationController.swift */; };
+		9068911B697429765A166D58CCF4614B /* IMvpNavigationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851E17667C029C3F96E021E09D288723 /* IMvpNavigationPresenter.swift */; };
+		9306DD600FEFC4169B6CB0AE17C081EC /* Yamp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 777A89F3A571CB91A06896CAE56FA2C7 /* Yamp-dummy.m */; };
+		A4E0F69EBBD516BFDC30583BCEAF244B /* HTTPVerb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E80B9A60D904CE12DEE3D717B77989 /* HTTPVerb.swift */; };
+		AF7A6B325FB8F9F483BE171B7867B4DD /* MvpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EA01CC659C41D69226C4E74D279277 /* MvpPresenter.swift */; };
+		B3664CEBF891A5858256C2584ABFD966 /* Pods-YampExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2466BB645F24047A193B0224F3AA4B0C /* Pods-YampExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0A43DA984487033A98056F1AC4B5498 /* MvpNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7AAB40C1E067021A053A3F591339C2 /* MvpNavigationController.swift */; };
+		D193D968A4FBF8C2ADFDEB424064281B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA392282659C45E8CA6BE6DAEEC2069B /* Foundation.framework */; };
+		DA57FEF4AA9A6C54A427B75DAC4CA95B /* Yamp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B35B9C1283A458399F8512354E23DE0 /* Yamp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD9E69D5B2F449B396B6D5C7A52DB879 /* Yarp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F839C912831ECC3CA3087C0D8E94E394 /* Yarp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB4D30EFDEA9A4F03D2BE974FF381F02 /* IMvpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7333BE88D625E6DDCD0EC3DE0645254 /* IMvpPresenter.swift */; };
+		F0D13F7F41C52C0B85783C5AFBF1BBD9 /* Yarp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62EB6BD1451CE3BC6CBD068CDC33315 /* Yarp.framework */; };
+		F128BEB432B7DDF3CE3D59397D3937D9 /* Pods-YampExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF776420277C33AB6B1BE397368E7EF /* Pods-YampExample-dummy.m */; };
+		F13DAA9F6238B1C66F13BDA1C9BFC945 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4060651D9C9C183CCBC86ACB1121EFD /* UseCase.swift */; };
+		F5A8B59C449554692E3C451BA7163C39 /* MvpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C7996942DE125361FFA161E366B27B /* MvpViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0253B4A68F858B964E9A5FDC719E5C6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87A1F59A5997F26080B918EF573165FC;
+			remoteInfo = Yamp;
+		};
+		6DB5F2BFC0147B311E097F1869837D00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1620806F66ACE95AA851DCC8782A6CD1;
+			remoteInfo = Yarp;
+		};
+		80608DD5BA189C1EB7B651E0BFCE5B72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1620806F66ACE95AA851DCC8782A6CD1;
+			remoteInfo = Yarp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02F1B7898EA6430848A302F5EAD3695D /* Yamp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Yamp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07E3C4C74FAD8521AC4855843BC0B551 /* DataManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		0AF495330F7A033C6CC5E5DCE6569AB3 /* Yamp.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Yamp.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0C175FE060548B5002BF2887D7D4F0B3 /* Pods_YampExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YampExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CB76293A57F101CDB8408EB54417108 /* Yarp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Yarp.debug.xcconfig; sourceTree = "<group>"; };
+		16E80B9A60D904CE12DEE3D717B77989 /* HTTPVerb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTTPVerb.swift; sourceTree = "<group>"; };
+		188131BB4347927E604517BA3EABFE03 /* NetworkManager+RequestHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NetworkManager+RequestHelper.swift"; sourceTree = "<group>"; };
+		198A66CE690D2457ED48CBAE179F074A /* Yarp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Yarp-Info.plist"; sourceTree = "<group>"; };
+		23FCEC459A2BDACB23C6E6FE32659D63 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		2466BB645F24047A193B0224F3AA4B0C /* Pods-YampExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YampExample-umbrella.h"; sourceTree = "<group>"; };
+		29EA01CC659C41D69226C4E74D279277 /* MvpPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MvpPresenter.swift; sourceTree = "<group>"; };
+		379DB549C4516A9B1CD72F282B53AE4A /* CustomError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		53C5A5BA61E8FA800994D1ADD424BEF8 /* String+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		661C06DEE698B82AFB8346BE640C4D49 /* Yarp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Yarp.swift; path = Source/Yarp.swift; sourceTree = "<group>"; };
+		6B35B9C1283A458399F8512354E23DE0 /* Yamp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Yamp-umbrella.h"; sourceTree = "<group>"; };
+		777A89F3A571CB91A06896CAE56FA2C7 /* Yamp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Yamp-dummy.m"; sourceTree = "<group>"; };
+		778C07A5A9B5F161D1086AF82A5D6039 /* Yarp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Yarp-prefix.pch"; sourceTree = "<group>"; };
+		7D00B056E266818CFEB6F6D53BC2FEBA /* Pods-YampExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YampExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8121891D8F118E71E31E83EFD9C9E044 /* Pods-YampExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YampExample-frameworks.sh"; sourceTree = "<group>"; };
+		84E651DEF9727C51EFA3BEEA2E36045A /* Pods-YampExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YampExample.modulemap"; sourceTree = "<group>"; };
+		851E17667C029C3F96E021E09D288723 /* IMvpNavigationPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IMvpNavigationPresenter.swift; sourceTree = "<group>"; };
+		86E3B1D40B11AAF8250F72DDCDC4D8BF /* Yamp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Yamp.modulemap; sourceTree = "<group>"; };
+		8860F2CCE03C1B521A31FB570B482A91 /* Pods-YampExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YampExample.debug.xcconfig"; sourceTree = "<group>"; };
+		8F5DCC6CA9CE4FE309E3E7CDE9D97BD2 /* MvpNavigationPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MvpNavigationPresenter.swift; sourceTree = "<group>"; };
+		9A2161ED9D9C8CC0E6486A2F08EE58B8 /* IDataManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IDataManager.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A112D2F888600250CBDAE5DF4DAC1497 /* Yarp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Yarp.modulemap; sourceTree = "<group>"; };
+		A62EB6BD1451CE3BC6CBD068CDC33315 /* Yarp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Yarp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B049AEF4B3E44D6976AA80220487A9E2 /* Yamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Yamp.release.xcconfig; sourceTree = "<group>"; };
+		B4060651D9C9C183CCBC86ACB1121EFD /* UseCase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		B4E928BE14C14900FD8127BF5717F7C1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		B7333BE88D625E6DDCD0EC3DE0645254 /* IMvpPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IMvpPresenter.swift; sourceTree = "<group>"; };
+		B856942A93585A05176019F91B0BAAD9 /* IMvpNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IMvpNavigationController.swift; sourceTree = "<group>"; };
+		B898E305DC383C03F80D10A5EFD1EF39 /* Yamp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Yamp-Info.plist"; sourceTree = "<group>"; };
+		B8B7741C5AF8D88E6549057D76F39669 /* Pods-YampExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YampExample-Info.plist"; sourceTree = "<group>"; };
+		BA392282659C45E8CA6BE6DAEEC2069B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C3AD5ED5E49E6B39F063FE86B3E69898 /* Yamp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Yamp-prefix.pch"; sourceTree = "<group>"; };
+		C67905B23B37B64868CA089FA399D4C4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C96BDC5E75D81E0316109F76CCD8A0F2 /* IMvpViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IMvpViewController.swift; sourceTree = "<group>"; };
+		C9C7996942DE125361FFA161E366B27B /* MvpViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MvpViewController.swift; sourceTree = "<group>"; };
+		CAF776420277C33AB6B1BE397368E7EF /* Pods-YampExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YampExample-dummy.m"; sourceTree = "<group>"; };
+		CDF945C3938A8D00248A76C79C712AB8 /* Pods-YampExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YampExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		D18DD8E34DA922624CB1110E786A576B /* Yarp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Yarp-dummy.m"; sourceTree = "<group>"; };
+		D614D4E07E51302BE77CB6826A1D0F24 /* Yamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Yamp.debug.xcconfig; sourceTree = "<group>"; };
+		DA7AAB40C1E067021A053A3F591339C2 /* MvpNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MvpNavigationController.swift; sourceTree = "<group>"; };
+		DB6C6453E997F01DEA53B43F95FF4B4F /* Yarp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Yarp.release.xcconfig; sourceTree = "<group>"; };
+		EBF2736859DD73929FD7F6006DBFE9AC /* Pods-YampExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YampExample.release.xcconfig"; sourceTree = "<group>"; };
+		EC980A75355A7A7A03CBEA0D2B4C1A6C /* NetworkManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F472F1D39312B9619BC1185D00E43AA3 /* Yarp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Yarp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F64137834C424559171ED925F0CC5E59 /* INetworkManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = INetworkManager.swift; sourceTree = "<group>"; };
+		F839C912831ECC3CA3087C0D8E94E394 /* Yarp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Yarp-umbrella.h"; sourceTree = "<group>"; };
+		F97AEC9D812F7BD3C6C086F25CDCDCDB /* IAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IAdapter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CB582E4478591BE5F7A8E83463D02D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D193D968A4FBF8C2ADFDEB424064281B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C3DBDD2C9618A4DC11302EA8A108D02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60CB167D830233AC4A88FE4851303C22 /* Foundation.framework in Frameworks */,
+				F0D13F7F41C52C0B85783C5AFBF1BBD9 /* Yarp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E8FC7703D42E408BDF3D3C49C18B0A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C7CDB994A148E5DDFF5BB0FCB012666 /* Foundation.framework in Frameworks */,
+				7F90FD5DC15C299F3674417EF17F20C8 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F4C1DF6D7AB5720CB14549A4489CCA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A62EB6BD1451CE3BC6CBD068CDC33315 /* Yarp.framework */,
+				BB0BC4718A53C33FDE08A9C30A213F22 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		29049D01C95E77299B850DFFCA3D523A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				35C56E730802ED7C00A01BE950BADFBF /* Pods-YampExample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		35C56E730802ED7C00A01BE950BADFBF /* Pods-YampExample */ = {
+			isa = PBXGroup;
+			children = (
+				84E651DEF9727C51EFA3BEEA2E36045A /* Pods-YampExample.modulemap */,
+				7D00B056E266818CFEB6F6D53BC2FEBA /* Pods-YampExample-acknowledgements.markdown */,
+				CDF945C3938A8D00248A76C79C712AB8 /* Pods-YampExample-acknowledgements.plist */,
+				CAF776420277C33AB6B1BE397368E7EF /* Pods-YampExample-dummy.m */,
+				8121891D8F118E71E31E83EFD9C9E044 /* Pods-YampExample-frameworks.sh */,
+				B8B7741C5AF8D88E6549057D76F39669 /* Pods-YampExample-Info.plist */,
+				2466BB645F24047A193B0224F3AA4B0C /* Pods-YampExample-umbrella.h */,
+				8860F2CCE03C1B521A31FB570B482A91 /* Pods-YampExample.debug.xcconfig */,
+				EBF2736859DD73929FD7F6006DBFE9AC /* Pods-YampExample.release.xcconfig */,
+			);
+			name = "Pods-YampExample";
+			path = "Target Support Files/Pods-YampExample";
+			sourceTree = "<group>";
+		};
+		479C465ADF369992F57F1CF131CF7775 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DA7AAB40C1E067021A053A3F591339C2 /* MvpNavigationController.swift */,
+				8F5DCC6CA9CE4FE309E3E7CDE9D97BD2 /* MvpNavigationPresenter.swift */,
+				29EA01CC659C41D69226C4E74D279277 /* MvpPresenter.swift */,
+				C9C7996942DE125361FFA161E366B27B /* MvpViewController.swift */,
+				CF42E22457244D8FA07CA6938D8741B6 /* Interfaces */,
+			);
+			name = Base;
+			path = Yamp/Yamp/Source/Base;
+			sourceTree = "<group>";
+		};
+		47B39F980391F45293382C2C6E3965FE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				07E3C4C74FAD8521AC4855843BC0B551 /* DataManager.swift */,
+				16E80B9A60D904CE12DEE3D717B77989 /* HTTPVerb.swift */,
+				9A2161ED9D9C8CC0E6486A2F08EE58B8 /* IDataManager.swift */,
+				F64137834C424559171ED925F0CC5E59 /* INetworkManager.swift */,
+				EC980A75355A7A7A03CBEA0D2B4C1A6C /* NetworkManager.swift */,
+				188131BB4347927E604517BA3EABFE03 /* NetworkManager+RequestHelper.swift */,
+				B4060651D9C9C183CCBC86ACB1121EFD /* UseCase.swift */,
+			);
+			name = Data;
+			path = Yamp/Yamp/Source/Data;
+			sourceTree = "<group>";
+		};
+		6E9748706FF09CC06484A5E1834FD03F /* Yarp */ = {
+			isa = PBXGroup;
+			children = (
+				661C06DEE698B82AFB8346BE640C4D49 /* Yarp.swift */,
+				D01D0C7B20AC9B418399D259C1934615 /* Support Files */,
+			);
+			path = Yarp;
+			sourceTree = "<group>";
+		};
+		8DD4487D85EFC6F3E5D58BBE5DBA8902 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				86E3B1D40B11AAF8250F72DDCDC4D8BF /* Yamp.modulemap */,
+				777A89F3A571CB91A06896CAE56FA2C7 /* Yamp-dummy.m */,
+				B898E305DC383C03F80D10A5EFD1EF39 /* Yamp-Info.plist */,
+				C3AD5ED5E49E6B39F063FE86B3E69898 /* Yamp-prefix.pch */,
+				6B35B9C1283A458399F8512354E23DE0 /* Yamp-umbrella.h */,
+				D614D4E07E51302BE77CB6826A1D0F24 /* Yamp.debug.xcconfig */,
+				B049AEF4B3E44D6976AA80220487A9E2 /* Yamp.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "YampExample/Pods/Target Support Files/Yamp";
+			sourceTree = "<group>";
+		};
+		BB0BC4718A53C33FDE08A9C30A213F22 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BA392282659C45E8CA6BE6DAEEC2069B /* Foundation.framework */,
+				B4E928BE14C14900FD8127BF5717F7C1 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		BEFC674B57D334CD94016D4CC9AFD8A0 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				379DB549C4516A9B1CD72F282B53AE4A /* CustomError.swift */,
+				53C5A5BA61E8FA800994D1ADD424BEF8 /* String+Extensions.swift */,
+			);
+			name = Util;
+			path = Yamp/Yamp/Source/Util;
+			sourceTree = "<group>";
+		};
+		C8194975F977D00C69EFCC9886BB4838 /* Yamp */ = {
+			isa = PBXGroup;
+			children = (
+				479C465ADF369992F57F1CF131CF7775 /* Base */,
+				47B39F980391F45293382C2C6E3965FE /* Data */,
+				FAF61CA03A8E224F4C242CF5F2226E0B /* Pod */,
+				8DD4487D85EFC6F3E5D58BBE5DBA8902 /* Support Files */,
+				BEFC674B57D334CD94016D4CC9AFD8A0 /* Util */,
+			);
+			name = Yamp;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				EA2D7554F4C40C8724F311FD82320AE2 /* Development Pods */,
+				0F4C1DF6D7AB5720CB14549A4489CCA7 /* Frameworks */,
+				FF4537C946729BD5A2D571B5B61B362B /* Pods */,
+				FBA632DD3BF16692A743704F16ED8077 /* Products */,
+				29049D01C95E77299B850DFFCA3D523A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CF42E22457244D8FA07CA6938D8741B6 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				F97AEC9D812F7BD3C6C086F25CDCDCDB /* IAdapter.swift */,
+				B856942A93585A05176019F91B0BAAD9 /* IMvpNavigationController.swift */,
+				851E17667C029C3F96E021E09D288723 /* IMvpNavigationPresenter.swift */,
+				B7333BE88D625E6DDCD0EC3DE0645254 /* IMvpPresenter.swift */,
+				C96BDC5E75D81E0316109F76CCD8A0F2 /* IMvpViewController.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		D01D0C7B20AC9B418399D259C1934615 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A112D2F888600250CBDAE5DF4DAC1497 /* Yarp.modulemap */,
+				D18DD8E34DA922624CB1110E786A576B /* Yarp-dummy.m */,
+				198A66CE690D2457ED48CBAE179F074A /* Yarp-Info.plist */,
+				778C07A5A9B5F161D1086AF82A5D6039 /* Yarp-prefix.pch */,
+				F839C912831ECC3CA3087C0D8E94E394 /* Yarp-umbrella.h */,
+				0CB76293A57F101CDB8408EB54417108 /* Yarp.debug.xcconfig */,
+				DB6C6453E997F01DEA53B43F95FF4B4F /* Yarp.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Yarp";
+			sourceTree = "<group>";
+		};
+		EA2D7554F4C40C8724F311FD82320AE2 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8194975F977D00C69EFCC9886BB4838 /* Yamp */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		FAF61CA03A8E224F4C242CF5F2226E0B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				23FCEC459A2BDACB23C6E6FE32659D63 /* LICENSE */,
+				C67905B23B37B64868CA089FA399D4C4 /* README.md */,
+				0AF495330F7A033C6CC5E5DCE6569AB3 /* Yamp.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		FBA632DD3BF16692A743704F16ED8077 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C175FE060548B5002BF2887D7D4F0B3 /* Pods_YampExample.framework */,
+				02F1B7898EA6430848A302F5EAD3695D /* Yamp.framework */,
+				F472F1D39312B9619BC1185D00E43AA3 /* Yarp.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF4537C946729BD5A2D571B5B61B362B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E9748706FF09CC06484A5E1834FD03F /* Yarp */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		250F1C92EFD737D1305C1189783BAF34 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9E69D5B2F449B396B6D5C7A52DB879 /* Yarp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48F5F4D7592D0DA192687CC2B0915B0B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA57FEF4AA9A6C54A427B75DAC4CA95B /* Yamp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED5C438056D3BAC6B79CB2773D42895A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3664CEBF891A5858256C2584ABFD966 /* Pods-YampExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1620806F66ACE95AA851DCC8782A6CD1 /* Yarp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C07F87907AD968D633AAA153740D6B2 /* Build configuration list for PBXNativeTarget "Yarp" */;
+			buildPhases = (
+				250F1C92EFD737D1305C1189783BAF34 /* Headers */,
+				91439907D7FDE6863362393DA06BC118 /* Sources */,
+				7E8FC7703D42E408BDF3D3C49C18B0A1 /* Frameworks */,
+				5890350032821B0D5DCD5BB5F7DBC622 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yarp;
+			productName = Yarp;
+			productReference = F472F1D39312B9619BC1185D00E43AA3 /* Yarp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		87A1F59A5997F26080B918EF573165FC /* Yamp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D86DD64B6D05A3BC859A893D6DB75672 /* Build configuration list for PBXNativeTarget "Yamp" */;
+			buildPhases = (
+				48F5F4D7592D0DA192687CC2B0915B0B /* Headers */,
+				2200D4B185D1BF6ACBBA47F2EDD9463E /* Sources */,
+				5C3DBDD2C9618A4DC11302EA8A108D02 /* Frameworks */,
+				C1F50A9EA5C1AF82E7230E5D6699C72E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE4F05DCA355C8030C946CC91F865225 /* PBXTargetDependency */,
+			);
+			name = Yamp;
+			productName = Yamp;
+			productReference = 02F1B7898EA6430848A302F5EAD3695D /* Yamp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		98CDE6253214FB46C9F889C66BECAEBF /* Pods-YampExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B562652C217E6F4C620B45060B5BB4C /* Build configuration list for PBXNativeTarget "Pods-YampExample" */;
+			buildPhases = (
+				ED5C438056D3BAC6B79CB2773D42895A /* Headers */,
+				1C691CFBCDDA6CA2AAC816E967E2AD6A /* Sources */,
+				0CB582E4478591BE5F7A8E83463D02D4 /* Frameworks */,
+				1ED374CD0DC8B0783272B41F99CC862D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06D068299B13576E15ED1E0471BBFB39 /* PBXTargetDependency */,
+				8BCE8EC441148B810C4167C522B5E891 /* PBXTargetDependency */,
+			);
+			name = "Pods-YampExample";
+			productName = "Pods-YampExample";
+			productReference = 0C175FE060548B5002BF2887D7D4F0B3 /* Pods_YampExample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 11.4";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = FBA632DD3BF16692A743704F16ED8077 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98CDE6253214FB46C9F889C66BECAEBF /* Pods-YampExample */,
+				87A1F59A5997F26080B918EF573165FC /* Yamp */,
+				1620806F66ACE95AA851DCC8782A6CD1 /* Yarp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1ED374CD0DC8B0783272B41F99CC862D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5890350032821B0D5DCD5BB5F7DBC622 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1F50A9EA5C1AF82E7230E5D6699C72E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C691CFBCDDA6CA2AAC816E967E2AD6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F128BEB432B7DDF3CE3D59397D3937D9 /* Pods-YampExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2200D4B185D1BF6ACBBA47F2EDD9463E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0A43DA984487033A98056F1AC4B5498 /* MvpNavigationController.swift in Sources */,
+				3397606527299C4D9840B3420D5204DE /* MvpNavigationPresenter.swift in Sources */,
+				AF7A6B325FB8F9F483BE171B7867B4DD /* MvpPresenter.swift in Sources */,
+				F5A8B59C449554692E3C451BA7163C39 /* MvpViewController.swift in Sources */,
+				6F33A19CCCFCA3C29F217E6E6FE1B4D4 /* CustomError.swift in Sources */,
+				14DC74C4A8EED5CA854A609AAF06B148 /* DataManager.swift in Sources */,
+				A4E0F69EBBD516BFDC30583BCEAF244B /* HTTPVerb.swift in Sources */,
+				6819886855A33B07A0978200D43398AD /* IAdapter.swift in Sources */,
+				82C7F90A84E7FCFC7979E4EDA5E77E5B /* IMvpNavigationController.swift in Sources */,
+				9068911B697429765A166D58CCF4614B /* IMvpNavigationPresenter.swift in Sources */,
+				EB4D30EFDEA9A4F03D2BE974FF381F02 /* IMvpPresenter.swift in Sources */,
+				4400CBAAAC6230BC75E576D2D8B27DD6 /* IMvpViewController.swift in Sources */,
+				0E1D117ECB906F3031A429B29AC5D865 /* IDataManager.swift in Sources */,
+				1535FB8767D666F626FA56119628F25E /* INetworkManager.swift in Sources */,
+				492054BFB2E1ABB07C02B933BC260EA6 /* NetworkManager+RequestHelper.swift in Sources */,
+				7F44D7E4026E75ED3F62BAF5449C40F3 /* NetworkManager.swift in Sources */,
+				45B31045C04833D929515CBB4FBFBAAB /* String+Extensions.swift in Sources */,
+				F13DAA9F6238B1C66F13BDA1C9BFC945 /* UseCase.swift in Sources */,
+				9306DD600FEFC4169B6CB0AE17C081EC /* Yamp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91439907D7FDE6863362393DA06BC118 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				340A1F1BA7D9629BCB51DA17E90E7E03 /* Yarp-dummy.m in Sources */,
+				12ECB577040AD0E4792AE2EA96B45719 /* Yarp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06D068299B13576E15ED1E0471BBFB39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Yamp;
+			target = 87A1F59A5997F26080B918EF573165FC /* Yamp */;
+			targetProxy = 0253B4A68F858B964E9A5FDC719E5C6D /* PBXContainerItemProxy */;
+		};
+		8BCE8EC441148B810C4167C522B5E891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Yarp;
+			target = 1620806F66ACE95AA851DCC8782A6CD1 /* Yarp */;
+			targetProxy = 6DB5F2BFC0147B311E097F1869837D00 /* PBXContainerItemProxy */;
+		};
+		EE4F05DCA355C8030C946CC91F865225 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Yarp;
+			target = 1620806F66ACE95AA851DCC8782A6CD1 /* Yarp */;
+			targetProxy = 80608DD5BA189C1EB7B651E0BFCE5B72 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D3B1F5F07534EFF4B867E6FE32EF089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6C6453E997F01DEA53B43F95FF4B4F /* Yarp.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Yarp/Yarp-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Yarp/Yarp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Yarp/Yarp.modulemap";
+				PRODUCT_MODULE_NAME = Yarp;
+				PRODUCT_NAME = Yarp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2CCC388BE429B85AC791489781C52FA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CB76293A57F101CDB8408EB54417108 /* Yarp.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Yarp/Yarp-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Yarp/Yarp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Yarp/Yarp.modulemap";
+				PRODUCT_MODULE_NAME = Yarp;
+				PRODUCT_NAME = Yarp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		39DA72C2B47E876C307BB5937DC924D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8860F2CCE03C1B521A31FB570B482A91 /* Pods-YampExample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YampExample/Pods-YampExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YampExample/Pods-YampExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4214E6946993DF02ED98D89047C64016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7B0B400B42D693B9C077676B4B4A8C98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B049AEF4B3E44D6976AA80220487A9E2 /* Yamp.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Yamp/Yamp-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Yamp/Yamp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Yamp/Yamp.modulemap";
+				PRODUCT_MODULE_NAME = Yamp;
+				PRODUCT_NAME = Yamp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CD85FD90473CFBE797E4264E7BBC70AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D2FFFA4DC068E17626C178E698B676BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D614D4E07E51302BE77CB6826A1D0F24 /* Yamp.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Yamp/Yamp-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Yamp/Yamp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Yamp/Yamp.modulemap";
+				PRODUCT_MODULE_NAME = Yamp;
+				PRODUCT_NAME = Yamp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D65450442D80D726953276FD6321EA8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBF2736859DD73929FD7F6006DBFE9AC /* Pods-YampExample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YampExample/Pods-YampExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YampExample/Pods-YampExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4214E6946993DF02ED98D89047C64016 /* Debug */,
+				CD85FD90473CFBE797E4264E7BBC70AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C07F87907AD968D633AAA153740D6B2 /* Build configuration list for PBXNativeTarget "Yarp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CCC388BE429B85AC791489781C52FA9 /* Debug */,
+				0D3B1F5F07534EFF4B867E6FE32EF089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B562652C217E6F4C620B45060B5BB4C /* Build configuration list for PBXNativeTarget "Pods-YampExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39DA72C2B47E876C307BB5937DC924D1 /* Debug */,
+				D65450442D80D726953276FD6321EA8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D86DD64B6D05A3BC859A893D6DB75672 /* Build configuration list for PBXNativeTarget "Yamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2FFFA4DC068E17626C178E698B676BB /* Debug */,
+				7B0B400B42D693B9C077676B4B4A8C98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -8,10 +8,16 @@
 
 import UIKit
 
-open class BasePresenter: IBasePresenter {
-    internal weak var view: UIViewController?
+open class MvpPresenter: IMvpPresenter {
+    public weak var view: UIViewController?
 
-    func connectToView(view: UIViewController) {
+    
+
+    public init() {
+        
+    }
+
+    public func connectToView(view: UIViewController) {
         self.view = view
     }
 }

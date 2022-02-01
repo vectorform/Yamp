@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-YampExample/Pods-YampExample-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Yamp/Yamp.framework
+${BUILT_PRODUCTS_DIR}/Yarp/Yarp.framework

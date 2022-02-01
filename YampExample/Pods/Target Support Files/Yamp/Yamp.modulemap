@@ -1,0 +1,6 @@
+framework module Yamp {
+  umbrella header "Yamp-umbrella.h"
+
+  export *
+  module * { export * }
+}

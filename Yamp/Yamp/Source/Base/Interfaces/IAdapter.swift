@@ -8,18 +8,18 @@
 
 import UIKit
 
-protocol IAdapter {
+public protocol IAdapter {
     associatedtype DataType
     var data: [DataType] { get }
     func updateData(data: [DataType])
 }
 
-protocol ITableViewAdapter: IAdapter, UITableViewDataSource {
+public protocol ITableViewAdapter: IAdapter, UITableViewDataSource {
     init(tableView: UITableView)
     var tableView: UITableView { get }
 }
 
-protocol ICollectionViewAdapter: IAdapter, UICollectionViewDataSource {
+public protocol ICollectionViewAdapter: IAdapter, UICollectionViewDataSource {
     init(collectionView: UICollectionView)
     var collectionView: UICollectionView { get }
 }

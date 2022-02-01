@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Yamp'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'Yet Another MVP Pod'
 
   s.description      = <<-DESC
@@ -16,7 +16,7 @@ DESC
 
   s.ios.deployment_target = '13.0'
 
-  s.source_files = 'Yamp/Yamp/Source/*.swift'
+  s.source_files = 'Yamp/Yamp/Source/Data/*.swift', 'Yamp/Yamp/Source/Util/*.swift', 'Yamp/Yamp/Source/Base/*.swift', 'Yamp/Yamp/Source/Base/Interfaces/*.swift'
 
   s.dependency 'Yarp'
 end

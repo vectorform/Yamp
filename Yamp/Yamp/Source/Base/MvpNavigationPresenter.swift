@@ -8,9 +8,9 @@
 
 import UIKit
 
-public class BaseNavigationPresenter: IBaseNavigationPresenter {
+open class MvpNavigationPresenter: IMvpNavigationPresenter {
 
-    required init() {
+    required public init() {
 
     }
 }

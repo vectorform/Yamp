@@ -1,0 +1,23 @@
+PODS:
+  - Yamp (0.0.2):
+    - Yarp
+  - Yarp (1.0.0)
+
+DEPENDENCIES:
+  - Yamp (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Yarp
+
+EXTERNAL SOURCES:
+  Yamp:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Yamp: a5a3a6756d28f9e69bb5d895bc08daa779471304
+  Yarp: 6c1fd3f2696b942a8897b5543ee2c40ebbc7ae4b
+
+PODFILE CHECKSUM: 84d6c0b232b4bdb4e15f2f0e500776c977c49324
+
+COCOAPODS: 1.10.1

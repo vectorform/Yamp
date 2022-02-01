@@ -15,7 +15,7 @@ import UIKit
  be shown.
  */
 
-protocol IBasePresenter: AnyObject {
+public protocol IMvpPresenter: AnyObject {
     /// ---
     /// A weak reference to the view controller that is associated with this instance of an IBasePresenter
 

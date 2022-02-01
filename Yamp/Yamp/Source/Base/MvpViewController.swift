@@ -8,13 +8,21 @@
 
 import UIKit
 
-open class BaseViewController: UIViewController, IBaseViewController {
+open class MvpViewController: UIViewController, IMvpViewController {
     /**
      A add any subviews you need in your override of this UIViewController method
      */
     open override func loadView() {
         super.loadView()
         view.backgroundColor = UIColor.white
+    }
+
+    public init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required public init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 
     /**
@@ -30,18 +38,18 @@ open class BaseViewController: UIViewController, IBaseViewController {
      an empty implementation in this class, but should be used by subclasses to add constraints
      to subviews. See the protocol for more notes.
      */
-    internal func installConstraints() {
+    open func installConstraints() {
 
     }
 
-    internal func addSubviews(views: [UIView], parent: UIView? = nil) {
+    public func addSubviews(views: [UIView], parent: UIView? = nil) {
         let viewToAddTo: UIView = parent ?? self.view
         for subView: UIView in views {
             viewToAddTo.addSubview(subView)
         }
     }
 
-    func displayAlert(title: String?, message: String?, actions: [UIAlertAction]) {
+    public func displayAlert(title: String?, message: String?, actions: [UIAlertAction]) {
         let alertView: UIAlertController = UIAlertController(title: title,
                                                              message: message,
                                                              preferredStyle: .alert)
@@ -51,7 +59,7 @@ open class BaseViewController: UIViewController, IBaseViewController {
         present(alertView, animated: true, completion: nil)
     }
 
-    func displayDefaultAlertForError(error: Error) {
+    public func displayDefaultAlertForError(error: Error) {
         let okAction: UIAlertAction = UIAlertAction(title: "OK".localized(),
                                                     style: .default) {(_)
                                                         in {[weak self] in

@@ -42,7 +42,7 @@ public class NetworkManager: INetworkManager {
     /// An example of storing a bearer token as a property to be used in authenticated calls
     /// If not nil, it will be added as an Authentication field to the request headers
 
-    internal var bearerToken: String?
+    public var bearerToken: String?
 
     required init(baseURL: String) {
         self.baseURL = baseURL
@@ -102,40 +102,21 @@ public class NetworkManager: INetworkManager {
      - parameter data: Data? - optional data to parse
      - Returns: a tuple containing an optional JSONArray or JSONDictionary, and, if case of failure, and Error
      */
-    internal func processResponse(response: URLResponse?, data: Data?) -> (Any?, Error?) {
-        var returnData: Any? = nil
+    internal func processResponse(response: URLResponse?) -> Error? {
         var returnError: Error? = nil
-        if let data = data,
-            let response = response as? HTTPURLResponse {
-            switch response.statusCode {
-            case 400:
-                returnError = NetworkManagerError.badData.error
-            case 401:
-                returnError = NetworkManagerError.notAuthenticated.error
-            case 403:
-                returnError = NetworkManagerError.notAuthorized.error
-            case 404:
-                returnError = NetworkManagerError.resourceNotFound.error
-            default:
-                break
-            }
-            if returnError == nil, response.statusCode == 200 {
-                do {
-                    returnData = try JSONSerialization.jsonObject(with: data, options: [])
-                } catch let parseError as NSError {
-                    returnError = parseError
-                }
-            } else {
-                returnError = NetworkManagerError.badData.error
+        if let response = response as? HTTPURLResponse {
+            if let error = NetworkManagerError(rawValue: response.statusCode) {
+                returnError = error.error
             }
         }
-        return (returnData, returnError)
+        return returnError
     }
 
-    public func callToObject(path: String,
-                             verb: HTTPVerb,
-                             parameters: JSONDictionary?,
-                             completion: @escaping NetworkManagerCallCompletion) {
+    public func callToPath(path: String,
+                           verb: HTTPVerb,
+                           parameters: JSONDictionary?,
+                           completion: @escaping NetworkManagerCallCompletion) {
+
         let (optRequest, error) = newRequestWithBody(method: verb.verbString, path: path, parameters: parameters)
         guard let request: URLRequest = optRequest, error == nil else {
             completion(nil, error)
@@ -148,44 +129,60 @@ public class NetworkManager: INetworkManager {
                 DispatchQueue.main.async {
                     completion(nil, error)
                 }
-                return
             }
-            let (parsedData, responseError) = self.processResponse(response: response, data: data)
-            let completionArray: JSONDictionary? = parsedData as? JSONDictionary
-            DispatchQueue.main.async {
-                completion(completionArray, responseError)
+            else if let responseError = self.processResponse(response: response) { //possibly still useable intel from BE
+                DispatchQueue.main.async {
+                    completion(data, responseError)
+                }
             }
+            else {
+                DispatchQueue.main.async { //looks like good data
+                    completion(data, nil)
+                }
+            }
+
         }
         if let dataTask: URLSessionDataTask = dataTask {
             dataTasks.append(dataTask)
             dataTask.resume()
         }
-
     }
 
-    public func callToArray(path: String,
-                            verb: HTTPVerb,
-                            parameters: JSONDictionary?,
-                            completion: @escaping NetworkManagerCallArrayCompletion ) {
-        
-        let (optRequest, error) = newRequest(method: verb.verbString, path: path, parameters: parameters)
+    public func callToPathParsed<T: Codable>(path: String,
+                           verb: HTTPVerb,
+                           parameters: JSONDictionary?,
+                           completion: @escaping NetworkManagerCallCompletionParsed<T>) {
+
+        let (optRequest, error) = newRequestWithBody(method: verb.verbString, path: path, parameters: parameters)
         guard let request: URLRequest = optRequest, error == nil else {
-            completion(nil, error)
+            completion(nil, nil, error)
             return
         }
         var dataTask: URLSessionDataTask? = nil
         dataTask = defaultSession.dataTask(with: request) { data, response, error in
             defer { self.cleanupDataTask(dataTask: dataTask) }
+
             if let error = error {
                 DispatchQueue.main.async {
-                    completion(nil, error)
+                    completion(nil, data, error)
                 }
-                return
             }
-            let (parsedData, responseError) = self.processResponse(response: response, data: data)
-            let completionArray: JSONArray? = parsedData as? JSONArray
-            DispatchQueue.main.async {
-                completion(completionArray, responseError)
+            else if let responseError = self.processResponse(response: response) { //possibly still useable intel from BE
+                DispatchQueue.main.async {
+                    completion(nil, data, responseError)
+                }
+            }
+            else if let data = data {
+                if let parsedData: T = try? JSONDecoder().decode(T.self, from: data) {
+                    DispatchQueue.main.async { //looks like good data
+                        completion(parsedData, data, nil)
+                    }
+                }
+                else {
+                    DispatchQueue.main.async {
+                        completion(nil, data, NetworkManagerError.badData.error)
+                    }
+                }
             }
         }
         if let dataTask: URLSessionDataTask = dataTask {
