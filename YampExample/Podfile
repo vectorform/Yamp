@@ -6,7 +6,8 @@ target 'YampExample' do
   use_frameworks!
 
   pod 'Yamp', :path => '../'
-
+  pod 'Texty'
+  pod 'SnapKit'
   # Pods for YampExample
 
 end

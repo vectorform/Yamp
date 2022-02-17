@@ -8,10 +8,12 @@
 import Foundation
 import Yamp
 
-protocol IHomeViewController: IMvpViewController {
+protocol IHomeViewController: IBaseViewController {
 
 }
 
-protocol IHomePresenter: IMvpPresenter {
-
+protocol IHomePresenter: IBasePresenter {
+    func navigateToPosts()
+    func presentCollectionTest()
+    func makePostCall()
 }

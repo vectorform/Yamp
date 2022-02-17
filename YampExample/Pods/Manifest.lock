@@ -1,13 +1,19 @@
 PODS:
+  - SnapKit (5.0.1)
+  - Texty (0.2.7)
   - Yamp (0.0.2):
     - Yarp
   - Yarp (1.0.0)
 
 DEPENDENCIES:
+  - SnapKit
+  - Texty
   - Yamp (from `../`)
 
 SPEC REPOS:
   trunk:
+    - SnapKit
+    - Texty
     - Yarp
 
 EXTERNAL SOURCES:
@@ -15,9 +21,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Texty: a329edb9edd2f2ea4c1b14acf176cd9538850426
   Yamp: a5a3a6756d28f9e69bb5d895bc08daa779471304
   Yarp: 6c1fd3f2696b942a8897b5543ee2c40ebbc7ae4b
 
-PODFILE CHECKSUM: 84d6c0b232b4bdb4e15f2f0e500776c977c49324
+PODFILE CHECKSUM: 9715f7b86f16a902f516573e072b986fdcdf6cd0
 
 COCOAPODS: 1.10.1

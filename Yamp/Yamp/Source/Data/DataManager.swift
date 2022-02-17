@@ -9,14 +9,14 @@
 import Foundation
 import CoreData
 
-class DataManager: IDataManager {
-    private let networkManager: INetworkManager
+open class DataManager: IDataManager {
+    public let networkManager: INetworkManager
 
-    init(networkManager: INetworkManager) {
+    public init(networkManager: INetworkManager) {
         self.networkManager = networkManager
     }
 
-    func shutdown() {
+    public func shutdown() {
         networkManager.shutdown()
     }
 }

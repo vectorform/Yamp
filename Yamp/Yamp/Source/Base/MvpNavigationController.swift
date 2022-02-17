@@ -26,11 +26,11 @@ open class MvpNavigationController: UINavigationController, IMvpNavigationContro
         fatalError("init(coder:) has not been implemented")
     }
 
-    public override func loadView() {
+    open override func loadView() {
         super.loadView()
     }
 
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         installConstriants()
     }

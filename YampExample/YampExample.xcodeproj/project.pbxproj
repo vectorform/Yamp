@@ -16,6 +16,37 @@
 		3CAD96A227A859FF00231BE6 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD969F27A859FF00231BE6 /* HomePresenter.swift */; };
 		3CAD96A327A859FF00231BE6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96A027A859FF00231BE6 /* HomeViewController.swift */; };
 		3CAD96A527A9A62400231BE6 /* IRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96A427A9A62400231BE6 /* IRouter.swift */; };
+		3CAD96AA27AAE93700231BE6 /* BaseContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96A727AAE93700231BE6 /* BaseContract.swift */; };
+		3CAD96AB27AAE93700231BE6 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96A827AAE93700231BE6 /* BasePresenter.swift */; };
+		3CAD96AC27AAE93700231BE6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96A927AAE93700231BE6 /* BaseViewController.swift */; };
+		3CAD96AF27AAEA9800231BE6 /* CTAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96AE27AAEA9800231BE6 /* CTAButton.swift */; };
+		3CAD96B127AAEAA700231BE6 /* ButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96B027AAEAA700231BE6 /* ButtonType.swift */; };
+		3CAD96B427AAEC8800231BE6 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96B327AAEC8800231BE6 /* Array+Extensions.swift */; };
+		3CAD96B627AAED3100231BE6 /* TextStyle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96B527AAED3100231BE6 /* TextStyle+Extensions.swift */; };
+		3CAD96BA27AAF62300231BE6 /* IAppDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96B827AAF62300231BE6 /* IAppDependencyContainer.swift */; };
+		3CAD96BB27AAF62300231BE6 /* AppDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96B927AAF62300231BE6 /* AppDependencyContainer.swift */; };
+		3CAD96BE27AAF85000231BE6 /* YampDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96BD27AAF85000231BE6 /* YampDataManager.swift */; };
+		3CAD96C227AAF91000231BE6 /* ICacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96C027AAF91000231BE6 /* ICacheManager.swift */; };
+		3CAD96C327AAF91000231BE6 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96C127AAF91000231BE6 /* CacheManager.swift */; };
+		3CAD96C627AAF98400231BE6 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96C527AAF98400231BE6 /* Post.swift */; };
+		3CAD96C827AAF9E000231BE6 /* YampNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96C727AAF9E000231BE6 /* YampNetworkManager.swift */; };
+		3CAD96CA27AAFBBD00231BE6 /* IYampNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96C927AAFBBD00231BE6 /* IYampNetworkManager.swift */; };
+		3CAD96CC27AAFDC800231BE6 /* IYampDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96CB27AAFDC800231BE6 /* IYampDataManager.swift */; };
+		3CAD96CF27AC4F9800231BE6 /* FetchPostsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96CE27AC4F9800231BE6 /* FetchPostsUseCase.swift */; };
+		3CAD96D127AC544700231BE6 /* BaseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96D027AC544700231BE6 /* BaseUseCase.swift */; };
+		3CAD96D527AC547E00231BE6 /* PostsContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96D227AC547E00231BE6 /* PostsContract.swift */; };
+		3CAD96D627AC547E00231BE6 /* PostsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96D327AC547E00231BE6 /* PostsPresenter.swift */; };
+		3CAD96D727AC547E00231BE6 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96D427AC547E00231BE6 /* PostsViewController.swift */; };
+		3CAD96D927AC558F00231BE6 /* PostTableAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96D827AC558F00231BE6 /* PostTableAdapter.swift */; };
+		3CAD96DB27AC56B300231BE6 /* PostTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96DA27AC56B300231BE6 /* PostTableCell.swift */; };
+		3CAD96E127B5786000231BE6 /* PostSimpleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96E027B5786000231BE6 /* PostSimpleViewModel.swift */; };
+		3CAD96E327B57BAB00231BE6 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96E227B57BAB00231BE6 /* PostViewModel.swift */; };
+		3CAD96E527B57BE300231BE6 /* FetchSimplePostUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96E427B57BE300231BE6 /* FetchSimplePostUseCase.swift */; };
+		3CAD96EA27B57E8400231BE6 /* PostsCollectionContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96E727B57E8400231BE6 /* PostsCollectionContract.swift */; };
+		3CAD96EB27B57E8400231BE6 /* PostsCollectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96E827B57E8400231BE6 /* PostsCollectionPresenter.swift */; };
+		3CAD96EC27B57E8400231BE6 /* PostsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96E927B57E8400231BE6 /* PostsCollectionViewController.swift */; };
+		3CAD96EF27B57F6300231BE6 /* PostCollectionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96EE27B57F6300231BE6 /* PostCollectionAdapter.swift */; };
+		3CAD96F127B5802000231BE6 /* PostCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD96F027B5802000231BE6 /* PostCollectionCell.swift */; };
 		A5D016B08D1087BC05D432D1 /* Pods_YampExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EB4004789AB80E65A16287 /* Pods_YampExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +62,37 @@
 		3CAD969F27A859FF00231BE6 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		3CAD96A027A859FF00231BE6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3CAD96A427A9A62400231BE6 /* IRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRouter.swift; sourceTree = "<group>"; };
+		3CAD96A727AAE93700231BE6 /* BaseContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseContract.swift; sourceTree = "<group>"; };
+		3CAD96A827AAE93700231BE6 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		3CAD96A927AAE93700231BE6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3CAD96AE27AAEA9800231BE6 /* CTAButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTAButton.swift; sourceTree = "<group>"; };
+		3CAD96B027AAEAA700231BE6 /* ButtonType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonType.swift; sourceTree = "<group>"; };
+		3CAD96B327AAEC8800231BE6 /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		3CAD96B527AAED3100231BE6 /* TextStyle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextStyle+Extensions.swift"; sourceTree = "<group>"; };
+		3CAD96B827AAF62300231BE6 /* IAppDependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAppDependencyContainer.swift; sourceTree = "<group>"; };
+		3CAD96B927AAF62300231BE6 /* AppDependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependencyContainer.swift; sourceTree = "<group>"; };
+		3CAD96BD27AAF85000231BE6 /* YampDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YampDataManager.swift; sourceTree = "<group>"; };
+		3CAD96C027AAF91000231BE6 /* ICacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICacheManager.swift; sourceTree = "<group>"; };
+		3CAD96C127AAF91000231BE6 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		3CAD96C527AAF98400231BE6 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		3CAD96C727AAF9E000231BE6 /* YampNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YampNetworkManager.swift; sourceTree = "<group>"; };
+		3CAD96C927AAFBBD00231BE6 /* IYampNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IYampNetworkManager.swift; sourceTree = "<group>"; };
+		3CAD96CB27AAFDC800231BE6 /* IYampDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IYampDataManager.swift; sourceTree = "<group>"; };
+		3CAD96CE27AC4F9800231BE6 /* FetchPostsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPostsUseCase.swift; sourceTree = "<group>"; };
+		3CAD96D027AC544700231BE6 /* BaseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUseCase.swift; sourceTree = "<group>"; };
+		3CAD96D227AC547E00231BE6 /* PostsContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsContract.swift; sourceTree = "<group>"; };
+		3CAD96D327AC547E00231BE6 /* PostsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsPresenter.swift; sourceTree = "<group>"; };
+		3CAD96D427AC547E00231BE6 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		3CAD96D827AC558F00231BE6 /* PostTableAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableAdapter.swift; sourceTree = "<group>"; };
+		3CAD96DA27AC56B300231BE6 /* PostTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableCell.swift; sourceTree = "<group>"; };
+		3CAD96E027B5786000231BE6 /* PostSimpleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSimpleViewModel.swift; sourceTree = "<group>"; };
+		3CAD96E227B57BAB00231BE6 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		3CAD96E427B57BE300231BE6 /* FetchSimplePostUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchSimplePostUseCase.swift; sourceTree = "<group>"; };
+		3CAD96E727B57E8400231BE6 /* PostsCollectionContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsCollectionContract.swift; sourceTree = "<group>"; };
+		3CAD96E827B57E8400231BE6 /* PostsCollectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsCollectionPresenter.swift; sourceTree = "<group>"; };
+		3CAD96E927B57E8400231BE6 /* PostsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsCollectionViewController.swift; sourceTree = "<group>"; };
+		3CAD96EE27B57F6300231BE6 /* PostCollectionAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionAdapter.swift; sourceTree = "<group>"; };
+		3CAD96F027B5802000231BE6 /* PostCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionCell.swift; sourceTree = "<group>"; };
 		A79BEF87580A12B70DFF819D /* Pods-YampExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YampExample.release.xcconfig"; path = "Target Support Files/Pods-YampExample/Pods-YampExample.release.xcconfig"; sourceTree = "<group>"; };
 		C5C15324EB630BFF84C49ED8 /* Pods-YampExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YampExample.debug.xcconfig"; path = "Target Support Files/Pods-YampExample/Pods-YampExample.debug.xcconfig"; sourceTree = "<group>"; };
 		C9EB4004789AB80E65A16287 /* Pods_YampExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YampExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,8 +131,12 @@
 		3CAD968427A8567600231BE6 /* YampExample */ = {
 			isa = PBXGroup;
 			children = (
+				3CAD96BC27AAF83A00231BE6 /* Data */,
+				3CAD96B227AAEC7F00231BE6 /* Util */,
 				3CAD969927A8592900231BE6 /* UI */,
 				3CAD968527A8567600231BE6 /* AppDelegate.swift */,
+				3CAD96B927AAF62300231BE6 /* AppDependencyContainer.swift */,
+				3CAD96B827AAF62300231BE6 /* IAppDependencyContainer.swift */,
 				3CAD968727A8567600231BE6 /* SceneDelegate.swift */,
 				3CAD968E27A8567900231BE6 /* Assets.xcassets */,
 				3CAD969027A8567900231BE6 /* LaunchScreen.storyboard */,
@@ -82,6 +148,9 @@
 		3CAD969927A8592900231BE6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3CAD96E627B57E6000231BE6 /* PostsCollectionController */,
+				3CAD96B727AAF60300231BE6 /* PostsTableController */,
+				3CAD96AD27AAEA4200231BE6 /* Components */,
 				3CAD96A627A9A65A00231BE6 /* YampController */,
 				3CAD969D27A859E700231BE6 /* Home */,
 				3CAD969A27A8593200231BE6 /* RootController */,
@@ -111,8 +180,136 @@
 		3CAD96A627A9A65A00231BE6 /* YampController */ = {
 			isa = PBXGroup;
 			children = (
+				3CAD96A727AAE93700231BE6 /* BaseContract.swift */,
+				3CAD96A827AAE93700231BE6 /* BasePresenter.swift */,
+				3CAD96A927AAE93700231BE6 /* BaseViewController.swift */,
 			);
 			path = YampController;
+			sourceTree = "<group>";
+		};
+		3CAD96AD27AAEA4200231BE6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3CAD96B027AAEAA700231BE6 /* ButtonType.swift */,
+				3CAD96AE27AAEA9800231BE6 /* CTAButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3CAD96B227AAEC7F00231BE6 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				3CAD96B527AAED3100231BE6 /* TextStyle+Extensions.swift */,
+				3CAD96B327AAEC8800231BE6 /* Array+Extensions.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		3CAD96B727AAF60300231BE6 /* PostsTableController */ = {
+			isa = PBXGroup;
+			children = (
+				3CAD96DC27AD99E000231BE6 /* Components */,
+				3CAD96D227AC547E00231BE6 /* PostsContract.swift */,
+				3CAD96D327AC547E00231BE6 /* PostsPresenter.swift */,
+				3CAD96D427AC547E00231BE6 /* PostsViewController.swift */,
+			);
+			path = PostsTableController;
+			sourceTree = "<group>";
+		};
+		3CAD96BC27AAF83A00231BE6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3CAD96CD27AC4F7E00231BE6 /* UseCases */,
+				3CAD96C427AAF96700231BE6 /* Models */,
+				3CAD96BF27AAF90300231BE6 /* CacheManager */,
+				3CAD96BD27AAF85000231BE6 /* YampDataManager.swift */,
+				3CAD96CB27AAFDC800231BE6 /* IYampDataManager.swift */,
+				3CAD96C727AAF9E000231BE6 /* YampNetworkManager.swift */,
+				3CAD96C927AAFBBD00231BE6 /* IYampNetworkManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3CAD96BF27AAF90300231BE6 /* CacheManager */ = {
+			isa = PBXGroup;
+			children = (
+				3CAD96C127AAF91000231BE6 /* CacheManager.swift */,
+				3CAD96C027AAF91000231BE6 /* ICacheManager.swift */,
+			);
+			path = CacheManager;
+			sourceTree = "<group>";
+		};
+		3CAD96C427AAF96700231BE6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3CAD96C527AAF98400231BE6 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3CAD96CD27AC4F7E00231BE6 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				3CAD96DD27B5782F00231BE6 /* FetchPosts */,
+				3CAD96D027AC544700231BE6 /* BaseUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		3CAD96DC27AD99E000231BE6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3CAD96D827AC558F00231BE6 /* PostTableAdapter.swift */,
+				3CAD96DA27AC56B300231BE6 /* PostTableCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3CAD96DD27B5782F00231BE6 /* FetchPosts */ = {
+			isa = PBXGroup;
+			children = (
+				3CAD96DF27B5784200231BE6 /* UseCases */,
+				3CAD96DE27B5783D00231BE6 /* Models */,
+			);
+			path = FetchPosts;
+			sourceTree = "<group>";
+		};
+		3CAD96DE27B5783D00231BE6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3CAD96E027B5786000231BE6 /* PostSimpleViewModel.swift */,
+				3CAD96E227B57BAB00231BE6 /* PostViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3CAD96DF27B5784200231BE6 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				3CAD96CE27AC4F9800231BE6 /* FetchPostsUseCase.swift */,
+				3CAD96E427B57BE300231BE6 /* FetchSimplePostUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		3CAD96E627B57E6000231BE6 /* PostsCollectionController */ = {
+			isa = PBXGroup;
+			children = (
+				3CAD96ED27B57F4E00231BE6 /* Components */,
+				3CAD96E727B57E8400231BE6 /* PostsCollectionContract.swift */,
+				3CAD96E827B57E8400231BE6 /* PostsCollectionPresenter.swift */,
+				3CAD96E927B57E8400231BE6 /* PostsCollectionViewController.swift */,
+			);
+			path = PostsCollectionController;
+			sourceTree = "<group>";
+		};
+		3CAD96ED27B57F4E00231BE6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3CAD96EE27B57F6300231BE6 /* PostCollectionAdapter.swift */,
+				3CAD96F027B5802000231BE6 /* PostCollectionCell.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		6A247046887FE5AB5B51149E /* Frameworks */ = {
@@ -246,13 +443,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CAD96E327B57BAB00231BE6 /* PostViewModel.swift in Sources */,
+				3CAD96D927AC558F00231BE6 /* PostTableAdapter.swift in Sources */,
+				3CAD96D727AC547E00231BE6 /* PostsViewController.swift in Sources */,
 				3CAD968627A8567600231BE6 /* AppDelegate.swift in Sources */,
+				3CAD96B127AAEAA700231BE6 /* ButtonType.swift in Sources */,
+				3CAD96EB27B57E8400231BE6 /* PostsCollectionPresenter.swift in Sources */,
+				3CAD96B627AAED3100231BE6 /* TextStyle+Extensions.swift in Sources */,
+				3CAD96D127AC544700231BE6 /* BaseUseCase.swift in Sources */,
+				3CAD96AF27AAEA9800231BE6 /* CTAButton.swift in Sources */,
+				3CAD96EF27B57F6300231BE6 /* PostCollectionAdapter.swift in Sources */,
+				3CAD96AB27AAE93700231BE6 /* BasePresenter.swift in Sources */,
 				3CAD96A527A9A62400231BE6 /* IRouter.swift in Sources */,
+				3CAD96D627AC547E00231BE6 /* PostsPresenter.swift in Sources */,
+				3CAD96EA27B57E8400231BE6 /* PostsCollectionContract.swift in Sources */,
+				3CAD96DB27AC56B300231BE6 /* PostTableCell.swift in Sources */,
+				3CAD96E527B57BE300231BE6 /* FetchSimplePostUseCase.swift in Sources */,
 				3CAD96A127A859FF00231BE6 /* HomeContract.swift in Sources */,
 				3CAD96A227A859FF00231BE6 /* HomePresenter.swift in Sources */,
+				3CAD96AC27AAE93700231BE6 /* BaseViewController.swift in Sources */,
+				3CAD96E127B5786000231BE6 /* PostSimpleViewModel.swift in Sources */,
 				3CAD968827A8567600231BE6 /* SceneDelegate.swift in Sources */,
+				3CAD96C227AAF91000231BE6 /* ICacheManager.swift in Sources */,
+				3CAD96BB27AAF62300231BE6 /* AppDependencyContainer.swift in Sources */,
+				3CAD96CC27AAFDC800231BE6 /* IYampDataManager.swift in Sources */,
+				3CAD96B427AAEC8800231BE6 /* Array+Extensions.swift in Sources */,
+				3CAD96CF27AC4F9800231BE6 /* FetchPostsUseCase.swift in Sources */,
+				3CAD96C327AAF91000231BE6 /* CacheManager.swift in Sources */,
+				3CAD96D527AC547E00231BE6 /* PostsContract.swift in Sources */,
 				3CAD96A327A859FF00231BE6 /* HomeViewController.swift in Sources */,
+				3CAD96C827AAF9E000231BE6 /* YampNetworkManager.swift in Sources */,
+				3CAD96BE27AAF85000231BE6 /* YampDataManager.swift in Sources */,
+				3CAD96BA27AAF62300231BE6 /* IAppDependencyContainer.swift in Sources */,
+				3CAD96AA27AAE93700231BE6 /* BaseContract.swift in Sources */,
+				3CAD96CA27AAFBBD00231BE6 /* IYampNetworkManager.swift in Sources */,
 				3CAD969C27A8594800231BE6 /* RootController.swift in Sources */,
+				3CAD96F127B5802000231BE6 /* PostCollectionCell.swift in Sources */,
+				3CAD96EC27B57E8400231BE6 /* PostsCollectionViewController.swift in Sources */,
+				3CAD96C627AAF98400231BE6 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

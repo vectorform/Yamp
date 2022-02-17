@@ -14,7 +14,7 @@ import Yarp
  an example of adding it to a header is shown below (in this case, with a Bearer token).
  */
 
-public class NetworkManager: INetworkManager {
+open class NetworkManager: INetworkManager {
     internal let baseURL: String
     /// ---
     /// An instance of Yarp to keep reachability status up to date.
@@ -36,7 +36,7 @@ public class NetworkManager: INetworkManager {
 
     private var downloadTasks: [URLSessionDownloadTask?] = []
 
-    private (set) var isReachable: Bool = false
+    public var isReachable: Bool = false
 
     /// ---
     /// An example of storing a bearer token as a property to be used in authenticated calls
@@ -44,7 +44,7 @@ public class NetworkManager: INetworkManager {
 
     public var bearerToken: String?
 
-    required init(baseURL: String) {
+    public required init(baseURL: String) {
         self.baseURL = baseURL
         self.yarp = Yarp.init(hostName: baseURL)
         self.yarp?.addHandler("NetworkManager", handler: { (yarp: Yarp) in {[weak self] in
@@ -61,7 +61,7 @@ public class NetworkManager: INetworkManager {
         yarp?.stop()
     }
 
-    func shutdown() {
+    public func shutdown() {
         for dataTask: URLSessionDataTask? in dataTasks { dataTask?.cancel() }
         for downloadTask: URLSessionDownloadTask? in downloadTasks { downloadTask?.cancel() }
         self.yarp?.removeAllHandlers()
@@ -228,7 +228,7 @@ public class NetworkManager: INetworkManager {
         return (true, nil)
     }
 
-    internal func downloadResourceAtURL(resourceURL: String,
+    public func downloadResourceAtURL(resourceURL: String,
                                         saveToLocation: String,
                                         force: Bool,
                                         completion: @escaping NetworkManagerDownloadCompletion) {

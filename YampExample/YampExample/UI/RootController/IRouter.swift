@@ -8,5 +8,6 @@
 import Foundation
 
 protocol IRouter {
-    
+    func pushNetworkPostTest()
+    func presentCollectionTest()
 }

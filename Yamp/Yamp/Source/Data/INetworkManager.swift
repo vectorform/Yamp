@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol INetworkManager {
+public protocol INetworkManager {
     /// ---
     /// a property that should reveal current reachability
     var isReachable: Bool { get }

@@ -8,12 +8,18 @@
 
 import UIKit
 
-typealias UseCaseCompletion<ResultType> = (Result<ResultType, Error>) -> Void
-typealias NoParameter = ()
+public typealias UseCaseCompletion<ResultType> = (Result<ResultType, Error>) -> Void
+public typealias NoParameter = ()
 
-protocol UseCase {
+public protocol IUseCase {
     associatedtype Parameter
     associatedtype ResultType
 
     func invoke(parameter: Parameter, completion: @escaping UseCaseCompletion<ResultType>)
+}
+
+public protocol IFetchUseCase {
+    associatedtype ResultType
+
+    func invoke(completion: @escaping UseCaseCompletion<ResultType>)
 }
