@@ -12,12 +12,12 @@ class FetchSimplePostsUseCase: BaseUseCase, IFetchUseCase {
     typealias ResultType = [PostSimpleViewModel]
 
     func invoke(completion: @escaping UseCaseCompletion<[PostSimpleViewModel]>) {
-        dataManager.fetchPosts { posts, error in
+        dataManager.fetchPosts { posts, apiReturn in
             if let posts = posts {
                 completion(.success(posts.asSimpleViewModel()))
             }
             else {
-                completion(.failure(error ?? NSError(domain: "", code: 0, description: "no valid post data")))
+                completion(.failure(apiReturn?.error ?? NSError(domain: "", code: 0, description: "no valid post data")))
             }
         }
     }

@@ -15,5 +15,4 @@ protocol IHomeViewController: IBaseViewController {
 protocol IHomePresenter: IBasePresenter {
     func navigateToPosts()
     func presentCollectionTest()
-    func makePostCall()
 }

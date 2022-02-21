@@ -119,7 +119,7 @@ open class NetworkManager: INetworkManager {
 
         let (optRequest, error) = newRequestWithBody(method: verb.verbString, path: path, parameters: parameters)
         guard let request: URLRequest = optRequest, error == nil else {
-            completion(nil, error)
+            completion(nil, ApiReturn(error: error))
             return
         }
         var dataTask: URLSessionDataTask? = nil
@@ -127,12 +127,12 @@ open class NetworkManager: INetworkManager {
             defer { self.cleanupDataTask(dataTask: dataTask) }
             if let error = error {
                 DispatchQueue.main.async {
-                    completion(nil, error)
+                    completion(data, ApiReturn(error: error, response: response as? HTTPURLResponse, data: data))
                 }
             }
             else if let responseError = self.processResponse(response: response) { //possibly still useable intel from BE
                 DispatchQueue.main.async {
-                    completion(data, responseError)
+                    completion(data, ApiReturn(error: responseError, response: response as? HTTPURLResponse, data: data))
                 }
             }
             else {
@@ -155,7 +155,7 @@ open class NetworkManager: INetworkManager {
 
         let (optRequest, error) = newRequestWithBody(method: verb.verbString, path: path, parameters: parameters)
         guard let request: URLRequest = optRequest, error == nil else {
-            completion(nil, nil, error)
+            completion(nil, ApiReturn(error: error))
             return
         }
         var dataTask: URLSessionDataTask? = nil
@@ -164,23 +164,23 @@ open class NetworkManager: INetworkManager {
 
             if let error = error {
                 DispatchQueue.main.async {
-                    completion(nil, data, error)
+                    completion(nil, ApiReturn(error: error, response: response as? HTTPURLResponse, data: data))
                 }
             }
             else if let responseError = self.processResponse(response: response) { //possibly still useable intel from BE
                 DispatchQueue.main.async {
-                    completion(nil, data, responseError)
+                    completion(nil, ApiReturn(error: responseError, response: response as? HTTPURLResponse, data: data))
                 }
             }
             else if let data = data {
                 if let parsedData: T = try? JSONDecoder().decode(T.self, from: data) {
                     DispatchQueue.main.async { //looks like good data
-                        completion(parsedData, data, nil)
+                        completion(parsedData, ApiReturn(error: nil, response: response as? HTTPURLResponse, data: data))
                     }
                 }
                 else {
                     DispatchQueue.main.async {
-                        completion(nil, data, NetworkManagerError.badData.error)
+                        completion(nil, ApiReturn(error: NetworkManagerError.badData.error, response: response as? HTTPURLResponse, data: data))
                     }
                 }
             }
@@ -235,26 +235,26 @@ open class NetworkManager: INetworkManager {
         if URLComponents(string: resourceURL) != nil {
             let (optRequest, error) = newRequest(method: "GET", path: resourceURL)
             guard let request: URLRequest = optRequest, error == nil else {
-                completion(false, error)
+                completion(false, ApiReturn(error: error))
                 return
             }
             var downloadTask: URLSessionDownloadTask?
             downloadTask = defaultSession.downloadTask(
                 with: request,
-                completionHandler: { (tempLocation: URL?, _, error: Error?) in
+                completionHandler: { (tempLocation: URL?, response: URLResponse?, error: Error?) in
                     defer { self.cleanupDownloadTask(downloadTask: downloadTask) }
                     guard error != nil else {
-                        completion(false, error)
+                        completion(false, ApiReturn(error: error, response: response as? HTTPURLResponse))
                         return
                     }
                     guard let tempLocation: URL = tempLocation else {
-                        completion(false, NetworkManagerError.downloadCouldNotBeSavedToDisk.error)
+                        completion(false, ApiReturn(error: NetworkManagerError.downloadCouldNotBeSavedToDisk.error, response: response as? HTTPURLResponse))
                         return
                     }
                     let (success, copyError) = self.copyFile(tempLocation: tempLocation,
                                                         saveToLocation: saveToLocation,
                                                         force: force)
-                    completion(success, copyError)
+                    completion(success, ApiReturn(error: copyError, response: response as? HTTPURLResponse))
 
             })
             if let downloadTask: URLSessionDownloadTask = downloadTask {

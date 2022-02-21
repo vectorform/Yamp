@@ -8,19 +8,18 @@
 import Foundation
 import Yamp
 
-typealias GetPostsCompletion = ([Post]?, Error?) -> Void
+typealias GetPostsCompletion = ([Post]?, ApiReturn?) -> Void
 
 class YampNetworkManager: NetworkManager, IYampNetworkManager {
 
     func getPosts(completion: @escaping GetPostsCompletion)  {
         // Case 1: Simple
-        callToPath(path: "posts", verb: .get, parameters: nil) { data, error in
+        callToPath(path: "posts", verb: .get, parameters: nil) { data, apiReturn in
             if let data = data, let posts = try? JSONDecoder().decode([Post].self, from: data) {
-                print(posts)
-                completion(posts, nil)
+                completion(posts, apiReturn)
             }
             else {
-                completion(nil, error)
+                completion(nil, apiReturn)
             }
         }
 

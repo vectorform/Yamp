@@ -91,7 +91,7 @@ class HomeViewController: BaseViewController, IHomeViewController {
         case disabledButton:
             break
         case networkTest:
-            presenter.makePostCall()
+            break
         default:
             break
         }

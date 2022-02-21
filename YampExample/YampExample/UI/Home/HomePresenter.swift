@@ -21,16 +21,4 @@ class HomePresenter: BasePresenter, IHomePresenter {
     func presentCollectionTest() {
         router?.presentCollectionTest()
     }
-
-    func makePostCall() {
-        if let url: URL = URL(string: "jeepBOH:") {
-            if UIApplication.shared.canOpenURL(url) {
-                UIApplication.shared.open(url) { (result) in
-                    if result {
-                       // The URL was delivered successfully!
-                    }
-                }
-            }
-        }
-    }
 }

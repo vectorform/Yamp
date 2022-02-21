@@ -10,5 +10,5 @@ import Yamp
 
 protocol IYampNetworkManager: INetworkManager{
 
-    func getPosts(completion: @escaping ([Post]?, Error?) -> Void)
+    func getPosts(completion: @escaping GetPostsCompletion)
 }

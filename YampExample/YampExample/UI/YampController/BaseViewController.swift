@@ -8,6 +8,7 @@
 import UIKit
 import Yamp
 
+// this is where you would put logic that will be shared amongst all controllers.  Generally not a lot goes in here, but things like showing a webview, alert, or other models might makes their way in here.  Models are also shown from the nav controller in many cases.
 class BaseViewController: MvpViewController, IBaseViewController {
 
 	private let presenter: IBasePresenter = BasePresenter()
@@ -21,20 +22,10 @@ class BaseViewController: MvpViewController, IBaseViewController {
     // MARK: Life Cycle Events
     //
 
-	override func loadView() {
-		super.loadView()
-
-	}
-
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.connectToView(view: self)
     }
-
-	override func installConstraints() {
-		super.installConstraints()
-
-	}
 
     //
     // MARK: UI Interactions (targets for buttons etc)

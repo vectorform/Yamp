@@ -52,10 +52,10 @@ public protocol INetworkManager {
 
 public typealias JSONDictionary = [String: Any]
 public typealias JSONArray = [Any]
-public typealias NetworkManagerCallCompletion = (Data?, Error?) -> Void
-public typealias NetworkManagerCallCompletionParsed<T: Codable> = (T?, Data?, Error?) -> Void
-public typealias NetworkManagerLoginCompletion = (Bool, Error?) -> Void
-public typealias NetworkManagerDownloadCompletion = (Bool, Error?) -> Void
+public typealias NetworkManagerCallCompletion = (Data?, ApiReturn?) -> Void
+public typealias NetworkManagerCallCompletionParsed<T: Codable> = (T?, ApiReturn?) -> Void
+public typealias NetworkManagerLoginCompletion = (Bool, ApiReturn?) -> Void
+public typealias NetworkManagerDownloadCompletion = (Bool, ApiReturn?) -> Void
 
 enum NetworkManagerError: Int, CustomStringConvertible, CustomErrorConvertible {
 
