@@ -50,4 +50,4 @@ For Further Examples, please view the Yamp Example Project included in the repo.
 
 
 ## License
-Texty is available under the [BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause) License. See the [LICENSE](LICENSE) file for more info.
+Yamp is available under the [BSD-3-Clause](https://opensource.org/licenses/BSD-3-Clause) License. See the [LICENSE](LICENSE) file for more info.
