@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = 'Yamp'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'Yet Another MVP Pod'
 
   s.description      = <<-DESC
-Some description idk lets yolo it for now!
+Yamp's goal is to make craetion of a new MVP-Centri Project easier overall, by providing the base functionality common in MVP projects.
 DESC
 
   s.homepage         = 'https://github.com/vectorform/Yamp'
